@@ -1,0 +1,159 @@
+* {
+    color: #01DBAF;
+    background-color: #072F33;
+    margin: 0;
+    font-family: Poppins;
+    font-weight:500;
+}
+
+
+@media only screen and (min-width: 960px) {
+    /* Styles for desktop view */
+
+
+    body {
+        background-color: transparent;
+        width: max(100%, 60rem);
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-bar {
+        background-color: #01DBAF;
+        width: max(100%, 60rem);
+        padding-top: 1.4cqmax;
+        padding-bottom: 1.4cqmax;
+    }
+
+
+    .menu-box {
+        list-style: none;
+        background-color: transparent; 
+        display: flex;
+        justify-content: space-around;
+    }
+
+    button {
+        visibility: hidden;
+    }
+
+
+    li {
+        display: inline-block;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 2cqmax;
+        color: #3A7876;
+        background-color: transparent;
+    } 
+
+
+
+    #active {
+        color: white;
+    }
+
+    .menu-btn-active {
+        color: #3A7876;
+        border-radius: 3em;
+        padding: 0.5em 2em;
+        background-color: #072F33;
+        min-width: 4em;
+    }
+
+    .menu-btn {
+        color: #3A7876;
+        border-radius: 3em;
+        padding: 0.5em 2em;
+        background-color: transparent;
+        min-width: 4em;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 959px) {
+    /* Styles for mobile view */
+    body {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .menu-bar {
+        background-color: #01DBAF;
+        max-width: 100%;
+        height: fit-content;
+        padding-top: 1.4cqmax;
+        padding-bottom: 1.4cqmax;
+        visibility: visible;
+    }
+
+
+    .menu-box {
+        visibility: visible;
+        height: fit-content;
+    }
+
+
+    button {
+        padding: 10px;
+        display: grid;
+        margin-left: 30px;
+        margin-top: -460px;
+        position: static;
+        visibility: collapse;
+    }
+
+    li {
+        font-size: 3.5cqmax;
+        background-color: #01DBAF;
+        list-style: none;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-left: -40px;
+        
+        visibility: visible;
+    }
+    
+
+    #active{
+        color: white;
+    }
+
+    
+    a {
+        text-decoration: none;
+        color:#3A7876;
+    }
+
+
+    .menu-btn-active {
+        color: #3A7876;
+        border-radius: 3em;
+        padding: 0.5em 2em;
+        background-color: #072F33;
+        min-width: 4em;
+    }
+
+    .menu-btn {
+        color: #3A7876;
+        border-radius: 3em;
+        padding: 0.5em 2em;
+        background-color: transparent;
+        min-width: 4em;
+    }
+
+
+
+
+
+}
