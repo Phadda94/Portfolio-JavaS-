@@ -138,20 +138,24 @@
         width: 100%;
         background-color:#01DBAF;
         position: fixed;
+        display: flex;
+        justify-content: center;
         bottom: 0%;
         
     }
 
 
     #linkd {
-        position: fixed;
+
         background-color: transparent;
         border-radius: 50%;
-        margin: 49%;
-        zoom: 130%;
-        width: 2.5cqmax;
-        margin-top: 0.6%;
+        width: 3.5cqmax;
+        margin-top: 15%;
         transition: 0.3s;
+    }
+
+    #in {
+        background-color: transparent;
     }
     
 
@@ -633,6 +637,7 @@
         background-color:#01DBAF;
         margin-top: 10%;
         position: fixed;
+        justify-content: center;
         bottom: 0;
         
         
@@ -643,7 +648,6 @@
     #in {
         display: flex;
         background-color: transparent;
-        margin-left: 45.5%; 
         border-radius: 50%;
  
     }
