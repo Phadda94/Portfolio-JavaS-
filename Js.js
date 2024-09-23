@@ -2,22 +2,27 @@ let button = document.getElementById('btn');
 let headList = document.getElementById('menu-bar');
 let cvButton = document.getElementById('btn-box');
 
+
+
+
 function showHeader () {
-    if (window.innerWidth < 961) {
-        headList.style.display ='flex'
-    } 
+    if (window.innerWidth < 960) {
+        headList.style.display = 'inline';
+        button.style.display = 'none';
+   }
 }
 
-function hideHeader() {
-    if (window.innerWidth < 961) {
+
+function hideHeader () {
+    if (window.innerWidth < 960) {
         headList.style.display = 'none';
-    } else if (window.innerWidth > 961) {
-        headList.style.display = 'clear';
+        button.style.display = '';
     }
 }
 
 
-button.addEventListener('click', showHeader)
-headList.addEventListener('mouseleave', hideHeader)
+button.addEventListener('click', showHeader);
+
+headList.addEventListener('mouseleave', hideHeader);
 
 
